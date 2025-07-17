@@ -35,6 +35,10 @@ fun GameScreen(
 
     var shownIndex by remember { mutableStateOf(-1) }
 
+<<<<<<< HEAD
+=======
+    // Анімація показу послідовності
+>>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
     if (isShowingSequence) {
         LaunchedEffect(sequence, currentLevel) {
             shownIndex = -1
@@ -47,6 +51,10 @@ fun GameScreen(
         }
     }
 
+<<<<<<< HEAD
+=======
+    // Перехід на GameOverScreen та збереження хайскору
+>>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
     if (gameOver) {
         val date = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         highScoreViewModel.saveIfHighScore(currentLevel - 1, date)
@@ -56,7 +64,11 @@ fun GameScreen(
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Text("Рівень: $currentLevel", fontSize = 24.sp)
         Spacer(Modifier.height(16.dp))
+<<<<<<< HEAD
 
+=======
+        // Показ послідовності або введення гравця
+>>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
         Row {
             if (isShowingSequence) {
                 sequence.forEachIndexed { i, emoji ->
@@ -77,6 +89,10 @@ fun GameScreen(
             }
         }
         Spacer(Modifier.height(32.dp))
+<<<<<<< HEAD
+=======
+        // Кнопки емодзі
+>>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
 
         if (isInputEnabled) {
             Row {
