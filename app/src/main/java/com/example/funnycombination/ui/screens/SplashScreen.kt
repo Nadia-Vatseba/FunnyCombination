@@ -1,12 +1,9 @@
 package com.example.funnycombination.ui.screens
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import kotlinx.coroutines.delay
 import androidx.compose.foundation.Image
@@ -16,11 +13,6 @@ import androidx.compose.ui.draw.scale
 
 @Composable
 fun SplashScreen(navController: NavController) {
-<<<<<<< HEAD
-
-=======
-    // Анімація масштабу
->>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
     val scale = remember { androidx.compose.animation.core.Animatable(0f) }
 
     LaunchedEffect(Unit) {

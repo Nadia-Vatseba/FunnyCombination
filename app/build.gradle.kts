@@ -57,18 +57,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-<<<<<<< HEAD
-=======
-    // Jetpack Compose
->>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
     val composeVersion = "1.6.0"
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.material:material:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
     implementation("androidx.activity:activity-compose:1.8.2")
     implementation("androidx.compose.animation:animation:$composeVersion")
-<<<<<<< HEAD
     implementation("androidx.compose.compiler:compiler:1.5.11")
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -77,27 +71,14 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-=======
-
     implementation("androidx.compose.compiler:compiler:1.5.11")
-
-    // Navigation Compose
     implementation("androidx.navigation:navigation-compose:2.7.7")
-
-    // Lifecycle & ViewModel
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
-
-    // Room
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
-
-    // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    // Debug tools
->>>>>>> d86bbb42e88a770b7090b96d72b65cddb6b658b3
     debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
     debugImplementation("androidx.compose.ui:ui-test-manifest:$composeVersion")
 }
