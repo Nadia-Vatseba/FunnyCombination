@@ -16,7 +16,7 @@ import androidx.compose.ui.draw.scale
 
 @Composable
 fun SplashScreen(navController: NavController) {
-    // Анімація масштабу
+
     val scale = remember { androidx.compose.animation.core.Animatable(0f) }
 
     LaunchedEffect(Unit) {

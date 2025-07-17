@@ -35,7 +35,6 @@ fun GameScreen(
 
     var shownIndex by remember { mutableStateOf(-1) }
 
-    // Анімація показу послідовності
     if (isShowingSequence) {
         LaunchedEffect(sequence, currentLevel) {
             shownIndex = -1
@@ -48,7 +47,6 @@ fun GameScreen(
         }
     }
 
-    // Перехід на GameOverScreen та збереження хайскору
     if (gameOver) {
         val date = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         highScoreViewModel.saveIfHighScore(currentLevel - 1, date)
@@ -58,7 +56,7 @@ fun GameScreen(
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Text("Рівень: $currentLevel", fontSize = 24.sp)
         Spacer(Modifier.height(16.dp))
-        // Показ послідовності або введення гравця
+
         Row {
             if (isShowingSequence) {
                 sequence.forEachIndexed { i, emoji ->
@@ -79,7 +77,6 @@ fun GameScreen(
             }
         }
         Spacer(Modifier.height(32.dp))
-        // Кнопки емодзі
 
         if (isInputEnabled) {
             Row {
